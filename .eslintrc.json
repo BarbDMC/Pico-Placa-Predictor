@@ -13,7 +13,7 @@
   },
   "rules": {
     "no-console": 1,
-    "indent": [2, 2, { "MemberExpression": 0 }],
+    "indent": ["error", 2],
     "semi": ["error", "always"]
   }
 }
