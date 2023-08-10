@@ -3,7 +3,7 @@
 
 The project allows users to consult if whether or not their car can be on the road based on their license plate number.
 
-It recives as inputs the license plate number(the whole number e.g., PBX-1234), a date (as a String), and a time.
+It receives as inputs the license plate number(the whole number e.g., PBX-1234), a date (as a String), and a time.
   
  
 ## Architecture
