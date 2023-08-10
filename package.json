@@ -1,0 +1,25 @@
+{
+  "name": "pico-placa-predictor",
+  "version": "1.0.0",
+  "description": "The project allows users to consult if whether or not their car can be on the road based on their license plate number.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbDMC/Pico-Placa-Predictor.git"
+  },
+  "author": "BarbDMC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbDMC/Pico-Placa-Predictor/issues"
+  },
+  "homepage": "https://github.com/BarbDMC/Pico-Placa-Predictor#readme",
+  "dependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1"
+  }
+}
