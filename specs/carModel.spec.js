@@ -1,14 +1,15 @@
-const CarModel = require('../src/models/carModel');
-const licensePlateUtils =  require('../src/utils/licensePlateUtils');
-
-jest.mock('../src/utils/licensePlateUtils');
-
-beforeEach(() => {
-  licensePlateUtils.getLastDigit.mockReturnValue(2);
-});
-
+'use strict';
 
 describe('CarModel', () => {
+  const CarModel = require('../src/models/carModel');
+  const licensePlateUtils =  require('../src/utils/licensePlateUtils');
+
+  jest.mock('../src/utils/licensePlateUtils');
+
+  beforeEach(() => {
+    licensePlateUtils.getLastDigit.mockReturnValue(2);
+  });
+  
   it('Should return an confirmative message if the car can drive', () => {
     licensePlateUtils.canDrive.mockReturnValue(true);
 

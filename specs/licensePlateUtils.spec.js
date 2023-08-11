@@ -1,8 +1,8 @@
 'use strict';
 
-const licensePlateUtils = require('../src/utils/licensePlateUtils');
-
 describe('licensePlateUtils', () => {
+  const licensePlateUtils = require('../src/utils/licensePlateUtils');
+  
   it('Should get the last digit of a license plate', () => {
     const lastDigit = licensePlateUtils.getLastDigit('PBX-1234');
     expect(lastDigit).toBe(4);
