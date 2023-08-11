@@ -10,19 +10,22 @@ The project was done with JavaScript, NodeJs, and Express.js.
 ## Architecture
 
 ### Folder structure
-`├──` **`specs`**   _folder with all project specs_   
-`├──` **`src`**  
-`└──── ` **`controllers`**  _folder with the project controllers_ 
-`└──── ` **`models`** _folder with the project models_ 
-`└──── ` **`public`** _folder with all the static files_ 
-`└──── ` **`utils`** _folder with all reusable functions_ 
-`└──── ` **`views`** _folder with the project views_ 
-`├── .gitignore`   
-`├── README.md` _The main readme_   
-`├── app.js` _main javascript file_   
-`├── package.json` 
-`├── eslintrc.json` _eslint rules file_  
-`└──.editorconfig` _editor configuration file_  
+```
+project-root/ 
+├── specs/ # Folder with all project specifications 
+├── src/ # Root source code directory 
+│ ├── controllers/ # Folder with project controllers 
+│ ├── models/ # Folder with project models 
+│ ├── public/ # Folder with all static files 
+│ ├── utils/ # Folder with reusable functions 
+│ └── views/ # Folder with project views 
+├── .gitignore # Git ignore file 
+├── README.md # The main README file 
+├── app.js # Main JavaScript file 
+├── package.json # Node.js package configuration file
+├── eslintrc.json # ESLint rules configuration file 
+└── .editorconfig # Editor configuration file
+```
 
 ### Used libraries
 - Axios
