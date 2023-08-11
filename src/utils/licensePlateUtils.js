@@ -1,4 +1,3 @@
-//Refactor this code to make it more readable and maintainable.
 'use strict';
 
 const { DateTime } = require('luxon');
