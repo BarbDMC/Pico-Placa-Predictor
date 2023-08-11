@@ -14,7 +14,7 @@ app.get('/validateDrive', (req, res) => {
   const { licensePlate, date, time } = req.query;
   const canDrive = carController.checkCanDrive(licensePlate, date, time);
 
-  res.json({ canDrive });
+  res.json(canDrive);
 });
 
 const port = 3000;
