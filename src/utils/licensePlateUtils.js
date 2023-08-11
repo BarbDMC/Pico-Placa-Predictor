@@ -15,7 +15,7 @@ module.exports = {
     return parseInt(licensePlate.slice(-1));
   },
   canDrive: (lastDigit, dateString, time) => {
-    const parsedDate = DateTime.fromFormat(dateString, 'MM/dd/yyyy');;
+    const parsedDate = DateTime.fromISO(dateString);
     const weekdayLong = parsedDate.weekdayLong;
     const restrictions = getDriveRestrictions(lastDigit, weekdayLong, time);
 
@@ -28,10 +28,10 @@ module.exports = {
 };
 
 function getDriveRestrictions(lastDigit, weekdayLong, time) {
-  const isCarRestrictedDay = licensePlateRules[weekdayLong].includes(lastDigit);
+  const isCarRestrictedDay = licensePlateRules[weekdayLong]?.includes(lastDigit);
 
-  const isMorningTime = (time >= '07:00 AM' && time <= '09:30 AM');
-  const isEveningTime = (time >= '04:00 PM' && time <= '07:30 PM');
+  const isMorningTime = (time >= '07:00' && time <= '09:30');
+  const isEveningTime = (time >= '16:00' && time <= '19:30');
   const isCarRestrictedTime = isMorningTime || isEveningTime;
 
   return {
