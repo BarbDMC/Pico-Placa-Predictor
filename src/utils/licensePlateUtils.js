@@ -15,7 +15,7 @@ module.exports = {
     return parseInt(licensePlate.slice(-1));
   },
   canDrive: (lastDigit, dateString, time) => {
-    const parsedDate = DateTime.fromISO(dateString);
+    const parsedDate = DateTime.fromFormat(dateString, 'MM/dd/yyyy');;
     const weekdayLong = parsedDate.weekdayLong;
     const restrictions = getDriveRestrictions(lastDigit, weekdayLong, time);
 
